@@ -17,10 +17,12 @@ import {
   Briefcase,
   FolderKanban,
   Trophy,
-  Users
+  Users,
+  Download
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import headerImage from "../assets/headerimg.jpeg";
+import resumePDF from "../assets/Shafia Tasnim Samonti (CV) .pdf";
 
 const SKILLS_CATEGORIES = [
   {
@@ -199,7 +201,7 @@ export default function App() {
           {
             role: "Design Secretary",
             org: "Association of Industrial & Production Engineers (AIPE)",
-            period: "Mar 2024 - Apr 2025",
+            period: "Mar 2024 - Present",
             points: ["Organized excel competition for IPE Fiesta-2026. Organized poster presentation competition for IPE Fiesta-2024.", "Designed promotional materials and managed departmental programs."]
           },
           {
@@ -313,17 +315,20 @@ export default function App() {
                   <a href="mailto:shafiatasnimsamonti@gmail.com" className="flex items-center gap-2 hover:text-accent-primary transition-colors"><Mail size={14} className="text-accent-primary" /> shafiatasnimsamonti@gmail.com</a>
                 </div>
                 <div className="flex flex-wrap gap-8 items-center">
-                  <a href="#" className="flex items-center gap-2 hover:text-accent-primary transition-colors"><Linkedin size={14} className="text-accent-primary" /> shafia-tasnim-samonti</a>
+                  <a href="https://www.linkedin.com/in/shafia-tasnim-samonti-8754ab27a/" className="flex items-center gap-2 hover:text-accent-primary transition-colors"><Linkedin size={14} className="text-accent-primary" /> shafia-tasnim-samonti</a>
                   <span className="flex items-center gap-2"><MapPin size={14} className="text-accent-primary" /> BUET, Dhaka</span>
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-4">
                  <a href="#contact" className="px-10 py-5 bg-text-heading text-white font-bold rounded-full hover:bg-accent-primary transition-all shadow-xl shadow-accent-primary/10 uppercase tracking-widest text-[10px]">
                   Get in touch
                  </a>
                  <a href="#resume" className="px-10 py-5 border border-border-light text-text-heading font-bold rounded-full hover:bg-white transition-all uppercase tracking-widest text-[10px]">
                   View Journey
+                 </a>
+                 <a href={resumePDF} download="Shafia Tasnim Samonti (CV).pdf" className="px-10 py-5 bg-accent-primary text-white font-bold rounded-full hover:bg-accent-primary/80 transition-all shadow-xl shadow-accent-primary/20 uppercase tracking-widest text-[10px] flex items-center gap-2">
+                  <Download size={14} /> Download CV
                  </a>
               </div>
             </motion.div>
