@@ -20,6 +20,7 @@ import {
   Users
 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import headerImage from "../assets/headerimg.jpeg";
 
 const SKILLS_CATEGORIES = [
   {
@@ -338,7 +339,7 @@ export default function App() {
               <div className="absolute inset-0 bg-accent-primary/5 rounded-[80px] rotate-6 border-2 border-accent-primary/10"></div>
               <div className="absolute inset-0 bg-bg-card rounded-[80px] -rotate-3 border border-border-light overflow-hidden flex items-center justify-center shadow-2xl">
                 <img 
-                  src="assets/headerimg.jpeg" 
+                  src={headerImage} 
                   alt="Shafia Tasnim Samonti" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
