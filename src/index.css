@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #f8fafc;
+  --color-bg-card: #ffffff;
+  --color-bg-offset: #f1f5f9;
+  --color-accent-primary: #2563eb;
+  --color-accent-secondary: #0f172a;
+  --color-text-heading: #0f172a;
+  --color-text-body: #475569;
+  --color-text-bright: #334155;
+  --color-border-light: #e2e8f0;
+  
+  --font-mono: "Fira Code", "Space Mono", "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-navy-dark);
+    color: var(--color-slate-body);
+  }
+}
